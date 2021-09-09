@@ -13,14 +13,60 @@
 
 <body>
 
-    <!-- Player1 / Player2 score display -->
-    <h1><span id="p1_score">0</span> to <span id="p2_score">0</span>></h1>
-    <!-- Buttons for Players / Reset -->
-    <button>+1 Player One</button>
-    <button>+1 Player Two</button>
-
-
-
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <!-- Card IMAGE -->
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="assets/game-header.jpg">
+                              </figure>
+                        </div>
+                        <header class="card-header">
+                           
+                                <p class="card-header-title is-size-2 ">
+                                    Score Keeper
+                                  </p>
+                        
+                       
+                          <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                              <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                          </button>
+                        </header>
+                        <div class="card-content">
+                          <div class="content">
+                                <!-- Player1 / Player2 score display -->
+                            <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                            <label for="playTo" class="label is-inline is-size-5">Playing to : </label>
+                         <div class="select is-link is-small is-rounded">
+                            <!-- Select -->
+                            <select id="playTo">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                         </div>
+    
+                                <p class="subtitle title is-size-6">Play with pressing the buttons</p>
+                          </div>
+                        </div>
+                        <footer class="card-footer">
+                            <!-- Buttons for Players / Reset -->
+                            <button class="button is-primary is-medium m-1 card-footer-item" id="p1Button">+1 Player One</button>
+                            <button class="button is-info is-medium m-1 card-footer-item" id="p2Button">+1 Player Two</button>
+                            <button class="button is-danger is-medium m-1 card-footer-item" id="resetButton">Reset</button>
+                        </footer>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Script for custom JS -->
     <script src="app.js"></script>
